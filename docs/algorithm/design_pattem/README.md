@@ -1,5 +1,9 @@
 ---
 title: README
+date: 2019-09-28 08:00:00
+categories:
+ - 基础知识
+ - 设计模式
 ---
 [[toc]]
 
@@ -89,10 +93,10 @@ title: README
 
 
 ## 创建型模式
-- [单例模式](https://www.rxwcv.cn/algorithm/design_pattem/creative.html#单例模式)
-- [简单工厂模式](https://www.rxwcv.cn/algorithm/design_pattem/creative.html#简单工厂模式)
-- [工厂方法](https://www.rxwcv.cn/algorithm/design_pattem/creative.html#工厂方法)
-- [抽象工厂模式](https://www.rxwcv.cn/algorithm/design_pattem/creative.html#抽象工厂模式)
+- [单例模式](https://docs.r8023d.xyz/algorithm/design_pattem/creative.html#单例模式)
+- [简单工厂模式](https://docs.r8023d.xyz/algorithm/design_pattem/creative.html#简单工厂模式)
+- [工厂方法](https://docs.r8023d.xyz/algorithm/design_pattem/creative.html#工厂方法)
+- [抽象工厂模式](https://docs.r8023d.xyz/algorithm/design_pattem/creative.html#抽象工厂模式)
 
 
 ## 结构型模式

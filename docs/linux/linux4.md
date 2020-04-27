@@ -1,5 +1,11 @@
 ---
 title: 管道指令
+date: 2019-09-13 14:00:00
+categories:
+ - 基础知识
+ - Linux
+tags:
+ - 管道指令
 ---
 [[toc]]
 

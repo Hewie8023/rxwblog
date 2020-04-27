@@ -1,5 +1,11 @@
 ---
 title: 进程管理
+date: 2019-09-13 18:00:00
+categories:
+ - 基础知识
+ - Linux
+tags:
+ - Linux进程
 ---
 
 [[toc]]

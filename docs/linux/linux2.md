@@ -1,5 +1,11 @@
 ---
 title: 文件
+date: 2019-09-13 10:00:00
+categories:
+ - 基础知识
+ - Linux
+tags:
+ - Linux文件
 ---
 [[toc]]
 

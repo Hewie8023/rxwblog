@@ -13,6 +13,7 @@ module.exports = {
   themeConfig: {
     type: "blog",
     authorAvatar: '/avatar.png',
+    author: 'Hewie',
     lastUpdated: "更新时间",
     logo: "/assets/img/logo.png",
     nav: navConfig,
@@ -20,5 +21,20 @@ module.exports = {
       appId: secret.appId, // your appId
       appKey: secret.appKey, // your appKey
     },
+    friendLink: [
+      {
+        title: 'Hewie博客',
+        desc: 'Hewie个人博客',
+        email: '349545547@qq.com',
+        link: 'http://www.rxwcv.cn/'
+      },
+    ],
+    startYear: '2019',
+    blogConfig: {
+      tag: {
+        location: 3,     // 在导航栏菜单中所占的位置，默认3
+        text: 'Tag'      // 默认文案 “标签”
+      }
+    }
   },
 };

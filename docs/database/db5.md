@@ -1,5 +1,11 @@
 ---
 title: MySQL
+date: 2019-09-11 17:00:00
+categories:
+ - 基础知识
+ - 数据库
+tags:
+ - MySql
 ---
 
 [[toc]]

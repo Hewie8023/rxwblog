@@ -1,6 +1,15 @@
 ---
 title: C++基础
+date: 2019-09-10 01:00:00
+categories:
+ - 基础知识
+ - C++
+tags:
+ - C++基本语言特性
+ - C++底层
 ---
+
+
 :point_down:内容速览:point_down:
 [[toc]]
 

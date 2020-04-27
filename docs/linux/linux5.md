@@ -1,5 +1,11 @@
 ---
 title: 正则表达式
+date: 2019-09-13 16:00:00
+categories:
+ - 基础知识
+ - Linux
+tags:
+ - 正则
 ---
 [[toc]]
 

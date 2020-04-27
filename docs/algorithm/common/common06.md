@@ -1,5 +1,11 @@
 ---
 title: Morris遍历
+date: 2019-09-20 15:00:00
+categories:
+ - 基础知识
+ - 常用算法
+tags:
+ - Morris
 ---
 ## Morris遍历
 Morris遍历是不需要额外空间的，它使用的是树自带的空节点。

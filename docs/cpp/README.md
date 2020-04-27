@@ -1,5 +1,9 @@
 ---
 title: README
+date: 2019-09-10 00:00:00
+categories:
+ - 基础知识
+ - C++
 ---
 
 ## 介绍
@@ -12,18 +16,18 @@ title: README
 
 希望对之后的学习和面试稍有帮助。
 
-**如果您觉得有意思，欢迎鼓励一个**[Star](https://github.com/Hewie8023/HewieBlog)
+**如果您觉得有意思，欢迎鼓励一个**[Star](https://github.com/Hewie8023/rxwblog)
 
 ## 目录
 
-> [C++基础](https://www.rxwcv.cn/cpp/cpp1.html)
+> [C++基础](https://docs.r8023d.xyz/cpp/cpp1.html)
 
-> [C++面向对象](https://www.rxwcv.cn/cpp/cpp2.html)
+> [C++面向对象](https://docs.r8023d.xyz/cpp/cpp2.html)
 
-> [运算符重载](https://www.rxwcv.cn/cpp/cpp3.html)
+> [运算符重载](https://docs.r8023d.xyz/cpp/cpp3.html)
 
-> [C++11新特性](https://www.rxwcv.cn/cpp/cpp4.html)
+> [C++11新特性](https://docs.r8023d.xyz/cpp/cpp4.html)
 
-> [C++11多线程](https://www.rxwcv.cn/cpp/cpp5.html)
+> [C++11多线程](https://docs.r8023d.xyz/cpp/cpp5.html)
 
-> [浅析STL](https://www.rxwcv.cn/cpp/cpp6.html)
+> [浅析STL](https://docs.r8023d.xyz/cpp/cpp6.html)

@@ -1,5 +1,14 @@
 ---
 title: 应用层
+date: 2019-09-13 13:00:00
+categories:
+ - 基础知识
+ - 计算机网络
+tags:
+ - DNS
+ - FTP
+ - HTTP
+ - HTTPS
 ---
 # 五、应用层
 

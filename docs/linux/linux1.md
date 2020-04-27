@@ -1,5 +1,11 @@
 ---
 title: 常用操作
+date: 2019-09-13 09:00:00
+categories:
+ - 基础知识
+ - Linux
+tags:
+ - Linux常用操作
 ---
 
 [[toc]]

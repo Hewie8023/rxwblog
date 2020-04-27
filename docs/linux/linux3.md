@@ -1,5 +1,11 @@
 ---
 title: 压缩与打包
+date: 2019-09-13 12:00:00
+categories:
+ - 基础知识
+ - Linux
+tags:
+ - Linux压缩与打包
 ---
 [[toc]]
 

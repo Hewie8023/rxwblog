@@ -1,5 +1,11 @@
 ---
 title: 常用SQL
+date: 2019-09-11 14:00:00
+categories:
+ - 基础知识
+ - 数据库
+tags:
+ - SQL
 ---
 [[toc]]
 
