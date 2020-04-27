@@ -3,7 +3,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/Hewie8023/rxwblog)](https://github.com/Hewie8023/rxwblog/network)
 [![GitHub stars](https://img.shields.io/github/stars/Hewie8023/rxwblog)](https://github.com/Hewie8023/rxwblog/stargazers)
 [![GitHub license](https://img.shields.io/github/license/Hewie8023/rxwblog)](https://github.com/Hewie8023/rxwblog/blob/master/LICENSE)
-[](https://img.shields.io/badge/author-Hewie-blue)
+[![blog author](https://img.shields.io/badge/author-Hewie-blue)](https://docs.r8023d.xyz)
 
 # rxwblog
 个人博客、记录点滴
