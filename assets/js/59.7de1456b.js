@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[59],{519:function(t,e,n){"use strict";n.r(e);var s=n(6),l=Object(s.a)({},(function(){var t=this.$createElement,e=this._self._c||t;return e("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[e("p",[this._v("先将新学的东西整理在这里，之后再做分类，以免忘记。")])])}),[],!1,null,null,null);e.default=l.exports}}]);
