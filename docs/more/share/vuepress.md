@@ -7,6 +7,11 @@ tags:
   -
 ---
 
+:::tip
+VuePress快速入门，了解并掌握搭建VuePress站点。
+:::
+
+<!-- more -->
 ## 官方文档
 
 [VuePress](https://vuepress.vuejs.org/)
@@ -14,6 +19,8 @@ tags:
 ## 效果演示
 
 <img class="can" src="https://s1.ax1x.com/2020/04/28/J5i1Z6.jpg" alt="VuePress效果">
+
+
 
 ## VuePress 是什么
 
