@@ -377,6 +377,7 @@ scripts{
 <img class="can" src="https://s1.ax1x.com/2020/04/28/JIDygf.jpg" alt="github效果">
 
 
+## 进阶
 
 ### 自定义域名
 
@@ -410,6 +411,67 @@ module.exports = {
 
 ### PWA
 
+安装
+```bash
+yarn add -D @vuepress/plugin-pwa
+# OR npm install -D @vuepress/plugin-pwa
+```
+
+使用
+```js
+module.exports = {
+  plugins: ['@vuepress/pwa']
+}
+```
+
+::: tip
+为了让你的网站完全地兼容 `PWA`，你需要:
+
+在 `.vuepress/public` 提供 `Manifest` 和 `icons`
+在 `.vuepress/config.js` 添加正確的 `head links`(参见下面例子).
+:::
+
+这是一个在VuePress中完全地兼容 `PWA` 的例子：
+```js
+module.exports = {
+  head: [
+    ['link', { rel: 'icon', href: '/logo.png' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['link', { rel: 'apple-touch-icon', href: '/icons/apple-touch-icon-152x152.png' }],
+    ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
+  ],
+  plugins: ['@vuepress/pwa', {
+      serviceWorker: true,
+      updatePopup: true
+  }],
+}
+```
+打开生成[`Manifest`](https://app-manifest.firebaseapp.com/)的网站，下载压缩包，将 `icon` 和 `Manifest.json` 添加进项目即可。
+
+<img class="can" src="https://s1.ax1x.com/2020/04/29/JHiqbj.jpg" alt="Manifest">
+
+#### updatePopup
+开启了一个用于刷新内容的弹窗。这个弹窗将会在站点有内容更新时显示出来，并提供了一个 `refresh` 按钮，允许用户立即刷新内容。
+```js
+module.exports = {
+  themeConfig: {
+    plugins: {
+    '@vuepress/pwa': {
+        serviceWorker: true,
+        updatePopup: {
+          message: "发现新内容可用",
+          buttonText: "刷新"
+        }
+      }
+  }
+}
+```
+
 ### Google Analytics
 
 安装
@@ -431,9 +493,97 @@ module.exports = {
   ]
 }
 ```
+在 [`Google Analytics`](https://analytics.google.com/) 网站上创建媒体资源得到 `跟踪ID` 即可。
+
+<img class="can" src="https://s1.ax1x.com/2020/04/29/JH3ykV.jpg" alt="GoogleAnalytics">
+
 
 ### 自动化部署 Travis-CI
+1. 在项目的根目录创建一个名为 `.travis.yml` 的文件
+
+```yaml
+language: node_js
+node_js:
+  - lts/*
+install:
+  - yarn install # npm ci
+script:
+  - yarn docs:build # npm run docs:build
+  - yarn cname 
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: docs/.vuepress/dist
+  github_token: $GITHUB_TOKEN # 在 GitHub 中生成，用于允许 Travis 向你的仓库推送代码。在 Travis 的项目设置页面进行配置，设置为 secure variable
+  keep_history: true
+  on:
+    branch: master
+```
+
+2. 添加 `cname.sh` 文件
+```bash
+# cname.sh
+
+#!/usr/bin/env sh
+
+set -e
+
+cd docs/.vuepress/dist
+echo 'docs.r8023d.xyz' > CNAME
+```
+
+3. 修改 `package.json` 文件
+```js
+//在scripts中添加cname
+"scripts": {
+    "cname": "bash cname.sh"
+  },
+```
+
+4. 获取 `.travis.yml` 文件中的 `GITHUB_TOKEN`
+
+进入 Github -> Settings -> Developer settings -> Personal access tokens，点击Generate new token，如下图填写即可获得token。
+
+<img class="can" src="https://s1.ax1x.com/2020/04/29/JHGpr9.jpg" alt="token">
+
+然后进入 `Travis CI`，进入相应的项目settings，在下图红框处填入刚刚获取的token即可。
+
+<img class="can" src="https://s1.ax1x.com/2020/04/29/JHGsRU.jpg" alt="travis">
+
+最后可直接通过如下命令进行部署：
+
+```bash
+git add .
+git commit -m"*****"
+git push
+```
+
 
 ### 逼格徽章
 
+进入 [`ShieldIO`](https://shields.io/) 获取如下图的徽章，复制 `Markdown` 格式的即可。
+
+<img class="can" src="https://s1.ax1x.com/2020/04/29/JHJ9SS.jpg" alt="徽章">
+
+
+
 ### 第三方主题使用
+
+本博客使用的是第三方的主题，叫 [`vuepress-theme-reco`](https://vuepress-theme-reco.recoluan.com/)。
+
+安装
+```bash
+npm install vuepress-theme-reco --save-dev
+# or
+yarn add vuepress-theme-reco #推荐
+```
+
+引用
+```js
+// .vuepress/config.js
+module.exports = {
+  theme: 'reco'
+}
+```
+
+具体的一些文档资料建议在主题官网查看。
