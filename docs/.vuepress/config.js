@@ -35,7 +35,7 @@ module.exports = {
     blogConfig: {
       tag: {
         location: 3, // 在导航栏菜单中所占的位置，默认3
-        text: "Tag", // 默认文案 “标签”
+        text: "标签", // 默认文案 “标签”
       },
     },
   },
